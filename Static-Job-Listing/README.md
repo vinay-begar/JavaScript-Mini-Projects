@@ -4,7 +4,7 @@
 ### Links
 
 - Solution URL: [Github](https://github.com/vinay-begar/JavaScript-Mini-Projects/tree/main/Static-Job-Listing)
-- Live Site URL: [Vercel Link](https://vercel.com/vinay-begars-projects/static-job-listing)
+- Live Site URL: [Vercel Link](https://static-job-listing-zeta-neon.vercel.app/)
 
 ### ScreenShot
 
