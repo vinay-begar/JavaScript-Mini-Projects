@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+body {
+  background: hsl(180, 52%, 96%);
+  font-size: 15px;
+  color: hsl(180, 14%, 20%);
+}
+header img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: hsl(180, 29%, 50%);
+}
+/* Filter section */
+.filter-section {
+  background: #fff;
+  padding: 15px 20px;
+  margin: 30px auto;
+  max-width: 1100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-box span {
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-box span button {
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.filter-box span button:hover {
+  background: hsl(180, 14%, 20%);
+}
+
+#reset {
+  background: none;
+  border: none;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#reset:hover {
+  text-decoration: underline;
+}
+
+/* Job Card */
+.container {
+  background: #fff;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 5px solid transparent;
+}
+
+.container.featured {
+  border-left-color: hsl(180, 29%, 50%);
+}
+
+.container-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Left Info */
+.sub-sub-container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.first-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.first-list li:first-child {
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+}
+
+.first-list li:nth-child(2) {
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.first-list li:nth-child(3) {
+  background: hsl(180, 14%, 20%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.second-list li {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.second-list li:hover {
+  color: hsl(180, 29%, 50%);
+}
+
+.third-list {
+  display: flex;
+  gap: 15px;
+  color: hsl(180, 8%, 52%);
+  font-size: 13px;
+}
+hr{
+  display: none;
+}
+/* Skills */
+.sub-sub-container2 .sub-2-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sub-2-list li {
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sub-2-list li:hover {
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+}
+@media (max-width: 480px) {
+  header img {
+    height: 100px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+    width: 70%;
+  }
+
+  .container-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sub-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+
+  }
+  .sub-sub-container1 {
+    gap: 6px;
+  }
+
+  .first-list {
+    gap: 8px;
+    /* flex-wrap: wrap; */
+  }
+
+  .second-list li {
+    font-size: 16px;
+  }
+
+  .third-list {
+    font-size: 12px;
+    gap: 8px;
+    /* flex-wrap: wrap; */
+  }
+  hr{
+    display: flex;
+  }
+  .sub-2-list li {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .filter-box {
+    width: 100%;
+  }
+}
